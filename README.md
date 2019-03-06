@@ -1,4 +1,4 @@
-This is a fork of the MAWs software suite to support use in Early Music Online.
+This is a fork of the MAWs software suite to support use in Early Music Online search.
 
 MAW: Minimal Absent Words
 ===
