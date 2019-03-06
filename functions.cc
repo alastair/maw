@@ -169,65 +169,165 @@ unsigned char Mapping( int a )
 	char c = DEL;
         switch ( a )
 	{
+    // New mapping for complete alphabet (case-sensitive) + "-" for EMO
             case 0:
                 c = 'A';
                 break;
             case 1:
-                c = 'C';
+                c = 'B';
                 break;
             case 2:
-                c = 'G';
+                c = 'C';
                 break;
             case 3:
-                c = 'T';
-                break;
-            case 4:
-                c = 'N';
-                break;
-            case 5:
-                c = 'R';
-                break;
-            case 6:
                 c = 'D';
                 break;
-            case 7:
-                c = 'Q';
-                break;
-            case 8:
+            case 4:
                 c = 'E';
                 break;
-            case 9:
+            case 5:
+                c = 'F';
+                break;
+            case 6:
+                c = 'G';
+                break;
+            case 7:
                 c = 'H';
                 break;
-            case 10:
+            case 8:
                 c = 'I';
+                break;
+            case 9:
+                c = 'J';
+                break;
+            case 10:
+                c = 'K';
                 break;
             case 11:
                 c = 'L';
                 break;
             case 12:
-                c = 'K';
-                break;
-            case 13:
                 c = 'M';
                 break;
+            case 13:
+                c = 'N';
+                break;
             case 14:
-                c = 'F';
+                c = 'O';
                 break;
             case 15:
                 c = 'P';
                 break;
             case 16:
-                c = 'S';
+                c = 'Q';
                 break;
             case 17:
-                c = 'W';
+                c = 'R';
                 break;
             case 18:
-                c = 'Y';
+                c = 'S';
                 break;
             case 19:
+                c = 'T';
+                break;
+            case 20:
+                c = 'U';
+                break;
+            case 21:
                 c = 'V';
+                break;
+            case 22:
+                c = 'W';
+                break;
+            case 23:
+                c = 'X';
+                break;
+            case 24:
+                c = 'Y';
+                break;
+            case 25:
+                c = 'Z';
+                break;
+            case 26:
+                c = 'a';
+                break;
+            case 27:
+                c = 'b';
+                break;
+            case 28:
+                c = 'c';
+                break;
+            case 29:
+                c = 'd';
+                break;
+            case 30:
+                c = 'e';
+                break;
+            case 31:
+                c = 'f';
+                break;
+            case 32:
+                c = 'g';
+                break;
+            case 33:
+                c = 'h';
+                break;
+            case 34:
+                c = 'i';
+                break;
+            case 35:
+                c = 'j';
+                break;
+            case 36:
+                c = 'k';
+                break;
+            case 37:
+                c = 'l';
+                break;
+            case 38:
+                c = 'm';
+                break;
+            case 39:
+                c = 'n';
+                break;
+            case 40:
+                c = 'o';
+                break;
+            case 41:
+                c = 'p';
+                break;
+            case 42:
+                c = 'q';
+                break;
+            case 43:
+                c = 'r';
+                break;
+            case 44:
+                c = 's';
+                break;
+            case 45:
+                c = 't';
+                break;
+            case 46:
+                c = 'u';
+                break;
+            case 47:
+                c = 'v';
+                break;
+            case 48:
+                c = 'w';
+                break;
+            case 49:
+                c = 'x';
+                break;
+            case 50:
+                c = 'y';
+                break;
+            case 51:
+                c = 'z';
+                break;
+            case 52:
+                c = '-';
                 break;
         }
 	return ( c );
@@ -238,65 +338,165 @@ int RevMapping ( unsigned char b )
 	int a = -1;
         switch ( b )
 	{
-            case 'A':
-                a = 0;
+    // New mapping for complete alphabet (case-sensitive) + "-" for EMO
+            case 0:
+                a = 'A';
                 break;
-            case 'C':
-                a = 1;
+            case 1:
+                a = 'B';
                 break;
-            case 'G':
-                a = 2;
+            case 2:
+                a = 'C';
                 break;
-            case 'T':
-                a = 3;
+            case 3:
+                a = 'D';
                 break;
-            case 'N':
-                a = 4;
+            case 4:
+                a = 'E';
                 break;
-            case 'R':
-                a = 5;
+            case 5:
+                a = 'F';
                 break;
-            case 'D':
-                a = 6;
+            case 6:
+                a = 'G';
                 break;
-            case 'Q':
-                a = 7;
+            case 7:
+                a = 'H';
                 break;
-            case 'E':
-                a = 8;
+            case 8:
+                a = 'I';
                 break;
-            case 'H':
-                a = 9;
+            case 9:
+                a = 'J';
                 break;
-            case 'I':
-                a = 10;
+            case 10:
+                a = 'K';
                 break;
-            case 'L':
-                a = 11;
+            case 11:
+                a = 'L';
                 break;
-            case 'K':
-                a = 12;
+            case 12:
+                a = 'M';
                 break;
-            case 'M':
-                a = 13;
+            case 13:
+                a = 'N';
                 break;
-            case 'F':
-                a = 14;
+            case 14:
+                a = 'O';
                 break;
-            case 'P':
-                a = 15;
+            case 15:
+                a = 'P';
                 break;
-            case 'S':
-                a = 16;
+            case 16:
+                a = 'Q';
                 break;
-            case 'W':
-                a = 17;
+            case 17:
+                a = 'R';
                 break;
-            case 'Y':
-                a = 18;
+            case 18:
+                a = 'S';
                 break;
-            case 'V':
-                a = 19;
+            case 19:
+                a = 'T';
+                break;
+            case 20:
+                a = 'U';
+                break;
+            case 21:
+                a = 'V';
+                break;
+            case 22:
+                a = 'W';
+                break;
+            case 23:
+                a = 'X';
+                break;
+            case 24:
+                a = 'Y';
+                break;
+            case 25:
+                a = 'Z';
+                break;
+            case 26:
+                a = 'a';
+                break;
+            case 27:
+                a = 'b';
+                break;
+            case 28:
+                a = 'c';
+                break;
+            case 29:
+                a = 'd';
+                break;
+            case 30:
+                a = 'e';
+                break;
+            case 31:
+                a = 'f';
+                break;
+            case 32:
+                a = 'g';
+                break;
+            case 33:
+                a = 'h';
+                break;
+            case 34:
+                a = 'i';
+                break;
+            case 35:
+                a = 'j';
+                break;
+            case 36:
+                a = 'k';
+                break;
+            case 37:
+                a = 'l';
+                break;
+            case 38:
+                a = 'm';
+                break;
+            case 39:
+                a = 'n';
+                break;
+            case 40:
+                a = 'o';
+                break;
+            case 41:
+                a = 'p';
+                break;
+            case 42:
+                a = 'q';
+                break;
+            case 43:
+                a = 'r';
+                break;
+            case 44:
+                a = 's';
+                break;
+            case 45:
+                a = 't';
+                break;
+            case 46:
+                a = 'u';
+                break;
+            case 47:
+                a = 'v';
+                break;
+            case 48:
+                a = 'w';
+                break;
+            case 49:
+                a = 'x';
+                break;
+            case 50:
+                a = 'y';
+                break;
+            case 51:
+                a = 'z';
+                break;
+            case 52:
+                a = '-';
                 break;
         }
 	return ( a );

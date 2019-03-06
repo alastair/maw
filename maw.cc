@@ -115,7 +115,7 @@ int main(int argc, char **argv)
 			}
 			if( c == '\n' ) continue;
 
-			c = toupper( c );
+//			c = toupper( c );   // the EMO alphabet is case-sensitive
 
 			if ( seq_len >= max_alloc_seq )
 			{
