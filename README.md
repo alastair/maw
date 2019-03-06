@@ -1,3 +1,5 @@
+This is a fork of the MAWs software suite to support use in Early Music Online.
+
 MAW: Minimal Absent Words
 ===
 
