@@ -339,164 +339,164 @@ int RevMapping ( unsigned char b )
         switch ( b )
 	{
     // New mapping for complete alphabet (case-sensitive) + "-" for EMO
-            case 0:
-                a = 'A';
+            case 'A':
+                a = 0;
                 break;
-            case 1:
-                a = 'B';
+            case 'B':
+                a = 1;
                 break;
-            case 2:
-                a = 'C';
+            case 'C':
+                a = 2;
                 break;
-            case 3:
-                a = 'D';
+            case 'D':
+                a = 3;
                 break;
-            case 4:
-                a = 'E';
+            case 'E':
+                a = 4;
                 break;
-            case 5:
-                a = 'F';
+            case 'F':
+                a = 5;
                 break;
-            case 6:
-                a = 'G';
+            case 'G':
+                a = 6;
                 break;
-            case 7:
-                a = 'H';
+            case 'H':
+                a = 7;
                 break;
-            case 8:
-                a = 'I';
+            case 'I':
+                a = 8;
                 break;
-            case 9:
-                a = 'J';
+            case 'J':
+                a = 9;
                 break;
-            case 10:
-                a = 'K';
+            case 'K':
+                a = 10;
                 break;
-            case 11:
-                a = 'L';
+            case 'L':
+                a = 11;
                 break;
-            case 12:
-                a = 'M';
+            case 'M':
+                a = 12;
                 break;
-            case 13:
-                a = 'N';
+            case 'N':
+                a = 13;
                 break;
-            case 14:
-                a = 'O';
+            case 'O':
+                a = 14;
                 break;
-            case 15:
-                a = 'P';
+            case 'P':
+                a = 15;
                 break;
-            case 16:
-                a = 'Q';
+            case 'Q':
+                a = 16;
                 break;
-            case 17:
-                a = 'R';
+            case 'R':
+                a = 17;
                 break;
-            case 18:
-                a = 'S';
+            case 'S':
+                a = 18;
                 break;
-            case 19:
-                a = 'T';
+            case 'T':
+                a = 19;
                 break;
-            case 20:
-                a = 'U';
+            case 'U':
+                a = 20;
                 break;
-            case 21:
-                a = 'V';
+            case 'V':
+                a = 21;
                 break;
-            case 22:
-                a = 'W';
+            case 'W':
+                a = 22;
                 break;
-            case 23:
-                a = 'X';
+            case 'X':
+                a = 23;
                 break;
-            case 24:
-                a = 'Y';
+            case 'Y':
+                a = 24;
                 break;
-            case 25:
-                a = 'Z';
+            case 'Z':
+                a = 25;
                 break;
-            case 26:
-                a = 'a';
+            case 'a':
+                a = 26;
                 break;
-            case 27:
-                a = 'b';
+            case 'b':
+                a = 27;
                 break;
-            case 28:
-                a = 'c';
+            case 'c':
+                a = 28;
                 break;
-            case 29:
-                a = 'd';
+            case 'd':
+                a = 29;
                 break;
-            case 30:
-                a = 'e';
+            case 'e':
+                a = 30;
                 break;
-            case 31:
-                a = 'f';
+            case 'f':
+                a = 31;
                 break;
-            case 32:
-                a = 'g';
+            case 'g':
+                a = 32;
                 break;
-            case 33:
-                a = 'h';
+            case 'h':
+                a = 33;
                 break;
-            case 34:
-                a = 'i';
+            case 'i':
+                a = 34;
                 break;
-            case 35:
-                a = 'j';
+            case 'j':
+                a = 35;
                 break;
-            case 36:
-                a = 'k';
+            case 'k':
+                a = 36;
                 break;
-            case 37:
-                a = 'l';
+            case 'l':
+                a = 37;
                 break;
-            case 38:
-                a = 'm';
+            case 'm':
+                a = 38;
                 break;
-            case 39:
-                a = 'n';
+            case 'n':
+                a = 39;
                 break;
-            case 40:
-                a = 'o';
+            case 'o':
+                a = 40;
                 break;
-            case 41:
-                a = 'p';
+            case 'p':
+                a = 41;
                 break;
-            case 42:
-                a = 'q';
+            case 'q':
+                a = 42;
                 break;
-            case 43:
-                a = 'r';
+            case 'r':
+                a = 43;
                 break;
-            case 44:
-                a = 's';
+            case 's':
+                a = 44;
                 break;
-            case 45:
-                a = 't';
+            case 't':
+                a = 45;
                 break;
-            case 46:
-                a = 'u';
+            case 'u':
+                a = 46;
                 break;
-            case 47:
-                a = 'v';
+            case 'v':
+                a = 47;
                 break;
-            case 48:
-                a = 'w';
+            case 'w':
+                a = 48;
                 break;
-            case 49:
-                a = 'x';
+            case 'x':
+                a = 49;
                 break;
-            case 50:
-                a = 'y';
+            case 'y':
+                a = 50;
                 break;
-            case 51:
-                a = 'z';
+            case 'z':
+                a = 51;
                 break;
-            case 52:
-                a = '-';
+            case '-':
+                a = 52;
                 break;
         }
 	return ( a );
