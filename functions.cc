@@ -163,343 +163,38 @@ unsigned int compute_maw ( unsigned char * seq, unsigned char * seq_id, struct T
 	return ( 1 );
 }
 
-
+/*
+Map 0-25 to A-Z, 26-51 to a-z and 52 to -
+*/
 unsigned char Mapping( int a )
 {
-	char c = DEL;
-        switch ( a )
-	{
-    // New mapping for complete alphabet (case-sensitive) + "-" for EMO
-            case 0:
-                c = 'A';
-                break;
-            case 1:
-                c = 'B';
-                break;
-            case 2:
-                c = 'C';
-                break;
-            case 3:
-                c = 'D';
-                break;
-            case 4:
-                c = 'E';
-                break;
-            case 5:
-                c = 'F';
-                break;
-            case 6:
-                c = 'G';
-                break;
-            case 7:
-                c = 'H';
-                break;
-            case 8:
-                c = 'I';
-                break;
-            case 9:
-                c = 'J';
-                break;
-            case 10:
-                c = 'K';
-                break;
-            case 11:
-                c = 'L';
-                break;
-            case 12:
-                c = 'M';
-                break;
-            case 13:
-                c = 'N';
-                break;
-            case 14:
-                c = 'O';
-                break;
-            case 15:
-                c = 'P';
-                break;
-            case 16:
-                c = 'Q';
-                break;
-            case 17:
-                c = 'R';
-                break;
-            case 18:
-                c = 'S';
-                break;
-            case 19:
-                c = 'T';
-                break;
-            case 20:
-                c = 'U';
-                break;
-            case 21:
-                c = 'V';
-                break;
-            case 22:
-                c = 'W';
-                break;
-            case 23:
-                c = 'X';
-                break;
-            case 24:
-                c = 'Y';
-                break;
-            case 25:
-                c = 'Z';
-                break;
-            case 26:
-                c = 'a';
-                break;
-            case 27:
-                c = 'b';
-                break;
-            case 28:
-                c = 'c';
-                break;
-            case 29:
-                c = 'd';
-                break;
-            case 30:
-                c = 'e';
-                break;
-            case 31:
-                c = 'f';
-                break;
-            case 32:
-                c = 'g';
-                break;
-            case 33:
-                c = 'h';
-                break;
-            case 34:
-                c = 'i';
-                break;
-            case 35:
-                c = 'j';
-                break;
-            case 36:
-                c = 'k';
-                break;
-            case 37:
-                c = 'l';
-                break;
-            case 38:
-                c = 'm';
-                break;
-            case 39:
-                c = 'n';
-                break;
-            case 40:
-                c = 'o';
-                break;
-            case 41:
-                c = 'p';
-                break;
-            case 42:
-                c = 'q';
-                break;
-            case 43:
-                c = 'r';
-                break;
-            case 44:
-                c = 's';
-                break;
-            case 45:
-                c = 't';
-                break;
-            case 46:
-                c = 'u';
-                break;
-            case 47:
-                c = 'v';
-                break;
-            case 48:
-                c = 'w';
-                break;
-            case 49:
-                c = 'x';
-                break;
-            case 50:
-                c = 'y';
-                break;
-            case 51:
-                c = 'z';
-                break;
-            case 52:
-                c = '-';
-                break;
-        }
-	return ( c );
+    char c = DEL;
+
+    if (a >= 0 && a <= 25) {
+        c = 'A' + a;
+    } else if (a >= 26 && a <= 51) {
+        c = 'a' + a - 26;
+    } else if (a == 52) {
+        c = '-';
+    }
+    return c;
 }
 
+/*
+Map A-Z to 0-25, a-z to 26-51 and - to 52
+*/
 int RevMapping ( unsigned char b )
 {
 	int a = -1;
-        switch ( b )
-	{
-    // New mapping for complete alphabet (case-sensitive) + "-" for EMO
-            case 'A':
-                a = 0;
-                break;
-            case 'B':
-                a = 1;
-                break;
-            case 'C':
-                a = 2;
-                break;
-            case 'D':
-                a = 3;
-                break;
-            case 'E':
-                a = 4;
-                break;
-            case 'F':
-                a = 5;
-                break;
-            case 'G':
-                a = 6;
-                break;
-            case 'H':
-                a = 7;
-                break;
-            case 'I':
-                a = 8;
-                break;
-            case 'J':
-                a = 9;
-                break;
-            case 'K':
-                a = 10;
-                break;
-            case 'L':
-                a = 11;
-                break;
-            case 'M':
-                a = 12;
-                break;
-            case 'N':
-                a = 13;
-                break;
-            case 'O':
-                a = 14;
-                break;
-            case 'P':
-                a = 15;
-                break;
-            case 'Q':
-                a = 16;
-                break;
-            case 'R':
-                a = 17;
-                break;
-            case 'S':
-                a = 18;
-                break;
-            case 'T':
-                a = 19;
-                break;
-            case 'U':
-                a = 20;
-                break;
-            case 'V':
-                a = 21;
-                break;
-            case 'W':
-                a = 22;
-                break;
-            case 'X':
-                a = 23;
-                break;
-            case 'Y':
-                a = 24;
-                break;
-            case 'Z':
-                a = 25;
-                break;
-            case 'a':
-                a = 26;
-                break;
-            case 'b':
-                a = 27;
-                break;
-            case 'c':
-                a = 28;
-                break;
-            case 'd':
-                a = 29;
-                break;
-            case 'e':
-                a = 30;
-                break;
-            case 'f':
-                a = 31;
-                break;
-            case 'g':
-                a = 32;
-                break;
-            case 'h':
-                a = 33;
-                break;
-            case 'i':
-                a = 34;
-                break;
-            case 'j':
-                a = 35;
-                break;
-            case 'k':
-                a = 36;
-                break;
-            case 'l':
-                a = 37;
-                break;
-            case 'm':
-                a = 38;
-                break;
-            case 'n':
-                a = 39;
-                break;
-            case 'o':
-                a = 40;
-                break;
-            case 'p':
-                a = 41;
-                break;
-            case 'q':
-                a = 42;
-                break;
-            case 'r':
-                a = 43;
-                break;
-            case 's':
-                a = 44;
-                break;
-            case 't':
-                a = 45;
-                break;
-            case 'u':
-                a = 46;
-                break;
-            case 'v':
-                a = 47;
-                break;
-            case 'w':
-                a = 48;
-                break;
-            case 'x':
-                a = 49;
-                break;
-            case 'y':
-                a = 50;
-                break;
-            case 'z':
-                a = 51;
-                break;
-            case '-':
-                a = 52;
-                break;
-        }
-	return ( a );
+
+    if (b >= 'A' && b <= 'Z') {
+        a = b - 'A';
+    } else if (b >= 'a' && b <= 'z') {
+        a = b - 'a' + 26;
+    } else if (b == '-') {
+        a = 52;
+    }
+    return a;
 }
 
 /* computes the reverse complement of str */
